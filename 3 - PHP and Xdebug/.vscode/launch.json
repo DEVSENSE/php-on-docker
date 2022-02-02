@@ -33,7 +33,6 @@
             "type": "php",
             "request": "launch",
             "port": [9000,9003],
-            "log":true,
             "pathMappings": {
                 "/var/www/html": "${workspaceFolder}\\data"
                 }
