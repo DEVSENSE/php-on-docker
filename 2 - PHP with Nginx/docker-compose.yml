@@ -9,14 +9,14 @@ services:
     networks:
       - internal
     volumes:
-      - ./data/:/var/www/html
+      - ./data/:/var/www/html/
       - ./logs/nginx:/var/log/nginx/
   php:
     image: php:fpm-alpine
     networks:
       - internal
     volumes:
-      - ./data/:/var/www/html
+      - ./data/:/var/www/html/
       - ./logs/php.log:/var/log/fpm-php.www.log
 networks:
   internal:
